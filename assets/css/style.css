@@ -30,6 +30,9 @@ header{
     background-color: #B28756;
     border-radius: 40px;
 }
+.menu-opener{
+    display: none;
+}
 .menu{
     flex:1;
     display: flex;
@@ -158,6 +161,8 @@ header{
 /* light */
 .default.light{
     background-color: #f7f7f7;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 .default.light .section-title,
 .default.light .section-body{
@@ -166,6 +171,8 @@ header{
 /* dark */
 .default.dark{
     background-color: #000;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 .default.dark .section-title,
 .default.dark .section-body{
@@ -177,6 +184,8 @@ header{
     background-color: #fff;
     box-shadow: 0px 0px 7px 0px #ccc;
     position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 .default.light-plus .section-body{
     color: #000;
@@ -327,7 +336,7 @@ header{
     background-image: url(../images/bg.jpg);
     background-size: cover;
     background-position: center;
-    padding: 0;
+    padding: 0 !important;
 }
 
 .section-team{
@@ -599,7 +608,7 @@ header{
 .section-premium .box-description{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 450px;
 }
 .section-premium .box-description .atributes{
     color: #999;
@@ -690,7 +699,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 800px;
+    width: 100%;
     margin: auto;
 }
 .section-tell .share{
@@ -875,6 +884,16 @@ header{
     list-style: none;
     color: #fff;
 }
+.dots{
+    display: flex;
+    gap: 2px;
+}
+.dot{
+    background-color: #ddd;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
 .section-footer--left .social ul{
     display: inline-flex;
     gap: 10px;
@@ -905,10 +924,6 @@ header{
 }
 
 
-
-
-
-
 .section-footer--right-body{
     background-color:#333 ;
     display: flex;
@@ -930,4 +945,65 @@ header{
     text-transform: uppercase;
     padding-bottom: 10px;
     width: 120%;
+}
+
+@media (max-width:950px) and (min-width:801px) {
+    .section-team{
+        max-width: 580px;
+    }
+}
+@media (max-width:1050px) and (min-width:801px) {
+    .section-aboutus{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .section-aboutus--left{
+        min-width:375px; 
+    }
+    .section-supporters{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .section-premium .slide {
+        max-width:800px;
+    }
+    .section-premium .slidearea{
+        max-width: 600px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+    }
+    .section-premium .box-description{
+        align-items: center;
+    }
+    .section-facts{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .section-price{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .section-map{
+        justify-content: center;
+        width: auto;
+    }
+    .section-map--right{
+        display: none;
+    }
+    .section-footer{
+        flex-wrap: wrap;
+        width: auto;
+        justify-content: center;
+        gap: 20px;
+    } 
+    .section-footer--left,.section-footer--middle,.section-footer--right{
+        height: 178px;
+    }
+    .section-footer--left{
+        order: 3;
+    }
+    .section-footer--middle{
+        max-width: 410px;
+    }
 }
