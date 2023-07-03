@@ -2,4 +2,4 @@
 
 Projeto responsivo com Flexbox
 
-> :construction: Projeto em construção :construction:
+[Veja o projeto online](https://projetoawax.alvimarfelipe.repl.co)
