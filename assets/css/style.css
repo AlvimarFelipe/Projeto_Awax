@@ -15,6 +15,7 @@ header{
 .header{
     max-width: 1140px;
     height: 100px;
+    padding: 0 20px;
     margin: auto;
     display: flex;
     color: white;
@@ -955,20 +956,21 @@ header{
     .banner h1{
         font-size: 38px;
     }
-    .logo{
-        margin-left: 10px;
-     }
+    .logoimg{
+        height: 70px;
+        width: 70px;
+    }
      nav {
         position: absolute;
         z-index: 99;
         background-color: rgba(0, 0, 0,0.9);
-        width: 70vw;
+        width: 60vw;
         height: calc(100vh - 100px);
         top: 100px;
         right: 0;
      }
      .menu-opener{
-        width: 45px;
+        width: 40px;
         margin-right: 30px;
         display: flex;
      }
@@ -978,7 +980,7 @@ header{
      .menu li a{
         font-weight: bold;
         height: 80px;
-        font-size: 20px;
+        font-size: 18px;
         margin-left: 80px;
         border: 0;
      }
@@ -994,11 +996,7 @@ header{
         flex: 1;
      }
      .section-aboutus--right{
-        box-sizing: border-box;
-        align-items: center;
-        width:270px;
-        left: -10px;
-        position: relative;
+        width:230px;
      }
      .section-aboutus--right img{
         max-width: 100%;
@@ -1017,14 +1015,9 @@ header{
         border-left: none;
      }
 
-     .section-team{
-        max-width:280px;
-    }
-     .section-clients{
-        max-width: 350px; 
-     }
+     .section-clients,
      .section-clients .slidearea{
-        max-width: 310px;
+        max-width: 200px;
      }
      .section-supporters{
          flex-wrap: wrap;
@@ -1093,22 +1086,24 @@ header{
 /* Tablets */
 @media (min-width:450px) and (max-width:800px) {
    
-    .logo{
-       margin-left: 10px;
+    .logoimg{
+        height: 70px;
+        width: 70px;
     }
     nav {
        position: absolute;
        z-index: 99;
        background-color: rgba(0, 0, 0,0.9);
-       width: 70vw;
+       width: 60vw;
        height: calc(100vh - 100px);
        top: 100px;
        right: 0;
     }
     .menu-opener{
-       width: 45px;
+       width: 42px;
        margin-right: 30px;
        display: flex;
+       
 
     }
     .menu ul{
@@ -1117,7 +1112,7 @@ header{
     .menu li a{
        font-weight: bold;
        height: 80px;
-       font-size: 27px;
+       font-size: 24px;
        margin-left: 50px;
        border: 0;
     }
@@ -1132,7 +1127,7 @@ header{
        margin: 30px;
     }
     .section-aboutus--right{
-       width: auto;
+       width: 100%;
     }
     .section-services{
        flex-wrap: wrap;
@@ -1147,11 +1142,9 @@ header{
      .section-service.service4{
         border-right: none;
      }
-    .section-clients{
-        width: 450px; 
-    }
+    .section-clients,
     .section-clients .slidearea{
-        width: 410px;
+        width: 430px;
     }
     .section-supporters{
         flex-wrap: wrap;
@@ -1274,11 +1267,7 @@ header{
 /* Ajustes */
 @media (max-width:550px) and (min-width:450px) {
     .section-aboutus--right{
-        flex: 1;
-        box-sizing: border-box;
-        align-items: center;
-        width:420px;
-        padding: 25px 20px 25px 10px;
+        width:400px;
      }
      .section-aboutus--right img{
         max-width: 100%;
@@ -1288,8 +1277,15 @@ header{
      }
 }
 
-@media (min-width:450px) and (max-width:950px){
+/* section team config */
+@media (min-width:591px) and (max-width:950px){
     .section-team{
         max-width: 580px;
+    }
+}
+@media (max-width:590px) {
+    
+    .section-team{
+        max-width:280px;
     }
 }
