@@ -33,6 +33,10 @@ header{
 }
 .menu-opener{
     display: none;
+    cursor: pointer;
+}
+.visibilidade{
+    display: none !important;
 }
 .menu{
     flex:1;
@@ -1103,8 +1107,6 @@ header{
        width: 42px;
        margin-right: 30px;
        display: flex;
-       
-
     }
     .menu ul{
        flex-direction: column;
@@ -1287,5 +1289,11 @@ header{
     
     .section-team{
         max-width:280px;
+    }
+}
+
+@media (min-width:801px) {
+    .visibilidade{
+        display: flex !important;
     }
 }
